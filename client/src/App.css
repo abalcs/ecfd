@@ -1,0 +1,287 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+
+Header, Footer{
+    display: flex;
+    min-height: 5rem;
+    min-width: 100%;
+    
+}
+
+Header ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    min-width: 100%;
+}
+
+Header li {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-size: 1.25rem;
+    color: #151515;
+}
+
+Header li:hover {
+    color: #799A18;
+    width: 100%;
+    font-size: 1.4rem;
+    transition: ease-in-out 250ms;
+}
+
+Header a {
+    text-decoration: none;
+}
+
+Main {
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about h1 {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: #151515;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+}
+
+.img1, .img2{
+    display: flex;
+    justify-content: center;
+}
+
+.img2 img {
+    width: 80%
+}
+
+.history-container {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    margin-left: 7rem;
+    margin-right: 1rem;
+}
+
+.history-container h3 {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.history-container p {
+    margin-top: 2rem;
+    line-height: 1.25;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.mission-container {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    margin-left: 1rem;
+    margin-right: 7rem
+}
+
+.mission-container h3 {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.mission-container p {
+    margin-top: 2rem;
+    line-height: 1.25;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.officers {
+    background-color: rgb(245, 245, 245);
+}
+
+.officers h1 {
+    padding-top: 2rem;
+    ;
+}
+
+.officer-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 0 15rem;
+}
+
+.card1, .card2, .card3, .card4, .card5, .card6 {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.cardImg {
+    width: 200px;
+    height: 250px
+}
+
+.officer-cards .title {
+    font-size: 30px;
+    font-weight: 400;
+    color: #151515
+}
+
+.officer-cards h5 {
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #575757;
+}
+
+.officer-cards .name {
+    padding-top: 2rem;
+}
+
+.title {
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1 {
+    margin-top: 2rem;
+    font-size: 3rem;
+    color: #151515;
+    width: 50%;
+    text-align: center;
+}
+
+.title p {
+    margin-top: 2rem;
+    font-size: 1.25rem;
+    color: #525252;
+    margin-bottom: 2rem;
+}
+
+.subtext {
+    font-size: 1.5rem;
+}
+
+img {
+    margin-top: 2rem;
+    height: 400px;
+    width: 400px;
+}
+
+button {
+    padding: 7px;
+    width: 10rem;
+    height: 5rem;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    border-radius: 5px;
+    background-color: #799A18;
+    color: white;
+    border: none;
+    margin-bottom: 2rem;
+}
+
+button:hover {
+    background-color: #8cb11c;
+    transition: ease-in-out 250ms;
+}
+
+.events, .contact, .news {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.events p {
+    margin-top: 3rem;
+    font-size: 2rem;
+}
+
+.contact p {
+    margin-top: 3rem;
+    font-size: 2rem;
+}
+
+.news p {
+    margin-top: 3rem;
+    padding-top: 1.25rem;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 10%;
+}
+
+.events, footer {
+    background-color: rgb(245, 245, 245);
+}
+
+.contactBtn, .newsBtn {
+    width: 225px;
+}
+
+.contactBtn:hover, .newsBtn:hover, .eventsBtn:hover {
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    font-size: 1.25rem;
+}
+
+Footer p {
+    font-size: 1.25rem;
+    color: #525252;
+}
+
+Footer ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    min-width: 100%;
+    margin-top: 3rem;
+}
+
+Footer li{
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-size: 1.25rem;
+    color: #151515;
+}
+
+Footer li:hover {
+    color: #799A18;
+    width: 100%;
+    font-size: 1.4rem;
+    transition: ease-in-out 250ms;
+}
+
+Footer a {
+    text-decoration: none;
+}
+
