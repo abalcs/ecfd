@@ -2,41 +2,27 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
-Header, Footer{
-    display: flex;
-    min-height: 5rem;
-    min-width: 100%;
-    
+.navLink {
+    color: white !important;
 }
 
-Header ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    min-width: 100%;
+.toggle {
+    color: white !important;
+    background-color: rgb(245, 245, 245) !important;
 }
 
-Header li {
-    margin-left: 3rem;
-    margin-right: 3rem;
-    font-size: 1.25rem;
-    color: #151515;
+.navLink:hover {
+    color: black !important;
+    font-size: 1.03rem;
+    transition: ease-in-out 150ms;
 }
 
-Header li:hover {
-    color: #799A18;
-    width: 100%;
-    font-size: 1.4rem;
-    transition: ease-in-out 250ms;
-}
-
-Header a {
+nav ul li {
     text-decoration: none;
+    list-style: none;
 }
 
 Main {
@@ -45,6 +31,29 @@ Main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+section {
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1 {
+    margin-top: 1.25rem;
+    font-size: 3rem;
+    color: #151515;
+    width: 60%;
+    text-align: center;
+}
+
+.title p {
+    margin-top: -20px;
+    height: 80px;
+    font-size: 1.5rem;
+    color: rgb(223, 71, 89);
 }
 
 .about h1 {
@@ -111,8 +120,7 @@ Main {
 }
 
 .officers h1 {
-    padding-top: 2rem;
-    ;
+    padding-top: 1.25rem;
 }
 
 .officer-cards {
@@ -134,10 +142,10 @@ Main {
     height: 250px
 }
 
-.officer-cards .title {
+.officer-cards h3 {
     font-size: 30px;
     font-weight: 400;
-    color: #151515
+    color: #151515;
 }
 
 .officer-cards h5 {
@@ -151,37 +159,23 @@ Main {
     padding-top: 2rem;
 }
 
-.title {
-    background-color: rgb(245, 245, 245);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.title h1 {
-    margin-top: 2rem;
-    font-size: 3rem;
-    color: #151515;
-    width: 50%;
-    text-align: center;
-}
-
-.title p {
-    margin-top: 2rem;
-    font-size: 1.25rem;
-    color: #525252;
-    margin-bottom: 2rem;
-}
-
-.subtext {
-    font-size: 1.5rem;
-}
-
 img {
-    margin-top: 2rem;
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
+}
+
+/* main p {
+    height: 80px;
+} */
+
+.buttons {
+    box-shadow: white 3px 2px 5px 0px;
+    margin-bottom: 1rem;
+    color: white !important;
+}
+
+.buttons:hover {
+    color: black !important;
 }
 
 button {
@@ -189,12 +183,12 @@ button {
     width: 10rem;
     height: 5rem;
     font-size: 1.5rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     border-radius: 5px;
     background-color: #799A18;
     color: white;
     border: none;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 button:hover {
@@ -212,13 +206,22 @@ button:hover {
     padding-bottom: 3rem;
 }
 
+.contact, .members {
+    width: 100%;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+}
+
+
+
 .events p {
-    margin-top: 3rem;
     font-size: 2rem;
 }
 
 .contact p {
-    margin-top: 3rem;
     font-size: 2rem;
 }
 
@@ -242,14 +245,34 @@ button:hover {
     cursor: pointer;
 }
 
+.events-page {
+    color: #1b1b1b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.events-page h1, p {
+    font-size: 30px;
+    padding: 2.25rem 0;
+}
+
+.eventsBtn {
+    text-decoration: none;
+    color: white;
+}
+
 footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     font-size: 1.25rem;
+    background-color: rgb(245, 245, 245);
 }
 
 Footer p {
@@ -264,7 +287,7 @@ Footer ul{
     align-items: center;
     list-style: none;
     min-width: 100%;
-    margin-top: 3rem;
+    margin-top: rem;
 }
 
 Footer li{
@@ -285,3 +308,6 @@ Footer a {
     text-decoration: none;
 }
 
+.ig {
+    padding-left: 15px;
+}

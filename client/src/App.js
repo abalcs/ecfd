@@ -8,6 +8,7 @@ import Footer from './components/Footer'
 
 import About from './components/About'
 import Members from './components/Members'
+import Events from './components/Events'
 
 const App = () => {
 
@@ -21,6 +22,9 @@ const App = () => {
                     </Route>
                     <Route path='/members'>
                         <Members/>
+                    </Route>
+                    <Route path='/events'>
+                        <Events/>
                     </Route>
                     <Main/>
                 </Switch>

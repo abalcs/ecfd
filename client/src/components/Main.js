@@ -1,33 +1,36 @@
 import React from 'react';
 import { LoremIpsum } from 'react-lorem-ipsum';
-// import Button from 'react-bootstrap/Button';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { Button } from 'react-bootstrap';
 
 const Main = () => {
 
   return (
     <>
-    <main>
-        <img src="https://www2.erie.gov/fire/sites/www2.erie.gov.fire/files/uploads/FireSafetyLogo.jpg" alt='Erie County FD Emblem'></img>
-        <p>Serving our Community Since 1776</p>
-        <button className='eventsBtn'>EVENTS</button>
-    </main>
+    <main className='bg-light'>
 
-    <section className='news'>
+        <img src="https://www2.erie.gov/fire/sites/www2.erie.gov.fire/files/uploads/FireSafetyLogo.jpg" alt='Erie County FD Emblem'></img>
+        <p>Proudly Serving our Community For X Years.</p>
+        <Button href='/events' variant='success' size='lg' className='buttons'>UPCOMING EVENTS</Button>
+    
+
+    <div className='news bg-dark text-light'>
         <h2>NEWS:</h2>
         <p>{LoremIpsum(10)}</p>
-        <button className='newsBtn'>FIND OUT MORE</button>
-    </section>
+        <Button href='#' variant='success' size='lg' className='buttons'>FIND OUT MORE</Button>
+    </div>
 
-    <section className='events'>
+    <div className='events bg-light'>
         <h2>UPCOMING EVENTS</h2>
         <p>No upcoming events.</p>
-    </section>
+    </div>
 
-    <section className='contact'>
+    <div className='contact bg-dark text-light'>
         <h2>CONTACT US</h2>
         <p>Erie County Fire Distric Officers Association</p>
-        <a href="mailto:email@example.com"><button className='contactBtn'>GET IN TOUCH!</button></a>
-    </section>
+        <Button href='mailto:email@example.com' variant='success' size='lg' className='buttons'>GET IN TOUCH</Button>
+    </div>
+    </main>
     </>
   );
 }

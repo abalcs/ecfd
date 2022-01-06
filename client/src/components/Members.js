@@ -3,9 +3,9 @@ import React from 'react';
 const Members = () => {
 
   return (
-    <section className='members'>
+    <div className='members bg-dark text-light'>
         <p>members</p>
-    </section>
+    </div>
   );
 }
 

@@ -7,7 +7,7 @@ import NY from '../img/NyState.png';
 const About = () => {
 
   return (
-    <section className='about'>
+    <div className='about'>
 
         <h1>ABOUT US</h1>
 
@@ -18,7 +18,7 @@ const About = () => {
                 </div>
                 <div className='history-container'>
                     <h3>Our History</h3>
-                    <p>{LoremIpsum()}</p>
+                    {LoremIpsum()}
                 </div>
             </div>
 
@@ -28,7 +28,7 @@ const About = () => {
                 </div>
                 <div className='mission-container'>
                     <h3>Our Mission</h3>
-                    <p>{LoremIpsum()}</p>
+                    {LoremIpsum()}
                 </div>
             </div>
         </div>
@@ -88,7 +88,7 @@ const About = () => {
             
         </div>
        
-    </section>
+    </div>
   );
 }
 
