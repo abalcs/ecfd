@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const cors = require('cors')
 // const routes = require('./routes/api_routes');
 // const db = require('./config/connection');
 // require('dotenv').config();
@@ -8,7 +9,7 @@ const PORT = process.env.PORT || 3007;
 
 // express returns an Object
 const app = express(); // instance = Object
-
+app.use(cors());
 // Setup our server
 
 app.use(express.static(path.join(__dirname, 'client/build')));

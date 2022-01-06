@@ -9,6 +9,7 @@ import Footer from './components/Footer'
 import About from './components/About'
 import Members from './components/Members'
 import Events from './components/Events'
+import Images from './components/Images'
 
 const App = () => {
 
@@ -26,8 +27,9 @@ const App = () => {
                     <Route path='/events'>
                         <Events/>
                     </Route>
-                    <Main/>
                 </Switch>
+            <Images/>
+            <Main/>
             <Footer/>
         </Router>
     )
