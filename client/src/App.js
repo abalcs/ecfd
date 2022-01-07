@@ -15,21 +15,25 @@ const App = () => {
 
     return (
         <Router>
-            <Header/>
-            <Title/>
-                <Switch>
-                    <Route path='/about'>
-                        <About/>
-                    </Route>
-                    <Route path='/members'>
-                        <Members/>
-                    </Route>
-                    <Route path='/events'>
-                        <Events/>
-                    </Route>
-                </Switch>
-            <Images/>
-            <Main/>
+        <Header/>
+        <Title/>
+            <Switch>
+                <Route path='/about'>
+                    <About/>
+                </Route>
+                <Route path='/members'>
+                    <Members/>
+                </Route>
+                <Route path='/events'>
+                    <Events/>
+                </Route>
+            </Switch>
+            <Switch>
+                <Route exact path='/'>
+                    <Images/>
+                    <Main/>
+                </Route>
+            </Switch>
             <Footer/>
         </Router>
     )

@@ -18,17 +18,6 @@ const Header = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-
-
-
-    // <Navbar expand='lg' className='navbar navbar-expand-lg navbar-dark bg-dark'>
-    //   <ul className='container justify-content-center'>
-    //     <a className='navbar-brand text-light' href='/'><li>HOME</li></a>
-    //     <a className='navbar-brand text-light ms-3' href='/about'><li>ABOUT</li></a>
-    //     <a className='navbar-brand text-light ms-3' href='/members'><li>ASSOCIATE MEMBERS</li></a>
-    //     <a className='navbar-brand text-light ms-3' href='/events'><li>EVENTS</li></a>
-    //   </ul>
-    // </Navbar>
   );
 }
 
