@@ -19,7 +19,9 @@ const About = () => {
                 <Card.Header>History</Card.Header>
                 <Card.Text className='p-3'>
                     <LoremIpsum
-                    avgSentencesPerParagraph={4}
+                    avgWordsPerSentence={5}
+                    avgSentencesPerParagraph={5}
+                    random='false'
                     />
                 </Card.Text>
             </Card>
@@ -29,7 +31,9 @@ const About = () => {
                 <Card.Header>Mission</Card.Header>
                 <Card.Text className='p-3'>
                     <LoremIpsum
-                    avgSentencesPerParagraph={4}
+                    avgWordsPerSentence={5}
+                    avgSentencesPerParagraph={5}
+                    random='false'
                     />
                 </Card.Text>
             </Card>
