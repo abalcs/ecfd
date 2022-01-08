@@ -6,10 +6,10 @@ import Fighters from '../img/firefighters.jpg'
 import Station from '../img/station.jpg'
 
 const breakPoints = [
-  { width: 1, itemsToShow: 1 },
-  { width: 550, itemsToShow: 2, itemsToScroll: 2 },
-  { width: 768, itemsToShow: 3 },
-  { width: 1200, itemsToShow: 4 }
+  { width: 1, itemsToShow: 1, itemsToScroll: 3 },
+  { width: 550, itemsToShow: 2, itemsToScroll: 3 },
+  { width: 800, itemsToShow: 2 },
+  { width: 1200, itemsToShow: 3 }
 ];
 
 function Images() {

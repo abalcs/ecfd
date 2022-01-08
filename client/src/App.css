@@ -32,19 +32,6 @@ nav ul li {
     
 }
 
-.pic1, .pic2, .pic3 {
-    opacity: .7;
-    /* min-width: 30rem; */
-}
-
-/* Main {
-    background-color: rgb(245, 245, 245);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
-
 section {
     background-color: rgb(245, 245, 245);
     display: flex;
@@ -84,7 +71,7 @@ section {
 
 img {
     height: 300px;
-    width: 300px;
+    width: 500px;
 }
 
 .btnWhite {
@@ -111,116 +98,7 @@ img {
     transition: all ease-in-out 250ms;
 }
 
-.events, .contact, .news {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
-
-.contact, .members {
-    width: 100%;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 40vh;
-}
-
-.events p {
-    font-size: 2rem;
-}
-
-.contact p {
-    font-size: 2rem;
-}
-
-.news p {
-    margin-top: 3rem;
-    padding-top: 1.25rem;
-    font-size: 2rem;
-    text-align: center;
-    margin: 0 10%;
-}
-
-.events, footer {
-    background-color: rgb(245, 245, 245);
-}
-
-.contactBtn, .newsBtn {
-    width: 225px;
-}
-
-.contactBtn:hover, .newsBtn:hover, .eventsBtn:hover {
-    cursor: pointer;
-}
-
-.events-page {
-    color: #1b1b1b;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 3rem 0;
-}
-
-.events-page h1, p {
-    font-size: 30px;
-    padding: 2.25rem 0;
-}
-
-.eventsBtn {
-    text-decoration: none;
-    color: white;
-}
-
 footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    font-size: 1.25rem;
+    /* flex-direction: column; */
     background-color: rgb(245, 245, 245);
-}
-
-Footer p {
-    font-size: 1.25rem;
-    color: #525252;
-}
-
-Footer ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    min-width: 100%;
-    margin-top: rem;
-}
-
-Footer li{
-    margin-left: 3rem;
-    margin-right: 3rem;
-    font-size: 1.25rem;
-    color: #151515;
-}
-
-Footer li:hover {
-    color: #799A18;
-    width: 100%;
-    font-size: 1.4rem;
-    transition: ease-in-out 250ms;
-}
-
-Footer a {
-    text-decoration: none;
-}
-
-.ig {
-    padding-left: 15px;
 }

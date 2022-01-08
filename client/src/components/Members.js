@@ -3,9 +3,12 @@ import React from 'react';
 const Members = () => {
 
   return (
-    <div className='members bg-dark text-light'>
-        <p>members</p>
+    <div className='bg-dark p-5'>
+      <div className='members d-flex justify-content-center bg-dark text-light p-5'>
+        <p>MEMBERS</p>
+      </div>
     </div>
+   
   );
 }
 

@@ -28,7 +28,7 @@ const About = () => {
 
             <Card border='danger' style={{ width: '30rem' }} className='shadow mb-5 bg-body rounded about'>
                 <Card.Img className='p-3' variant="top" src={NY} />
-                <Card.Header className='bg-dark text-light text-center' >MISSION</Card.Header>
+                <Card.Header className='bg-dark text-light text-center'>MISSION</Card.Header>
                 <Card.Text className='p-3'>
                     <LoremIpsum
                     avgWordsPerSentence={5}
