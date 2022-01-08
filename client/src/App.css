@@ -68,67 +68,9 @@ section {
     color: rgb(223, 71, 89);
 }
 
-.about {
-    width: 100% !important;
-}
-
-.about h1 {
-    text-align: center;
-    margin-top: 2rem;
-    font-size: 2rem;
-    color: #151515;
-}
-
-.about-container {
-    display: flex;
-    justify-content: center;
-}
-
-.img1, .img2{
-    display: flex;
-    justify-content: center;
-}
-
-.img2 img {
-    width: 80%
-}
-
-.history-container {
-    margin-top: 2rem;
-    margin-bottom: 4rem;
-    margin-left: 7rem;
-    margin-right: 1rem;
-}
-
-.history-container h3 {
-    font-size: 28px;
-    font-weight: 400;
-}
-
-.history-container p {
-    margin-top: 2rem;
-    line-height: 1.25;
-    font-size: 20px;
-    font-weight: 400;
-}
-
-.mission-container {
-    margin-top: 2rem;
-    margin-bottom: 4rem;
-    margin-left: 1rem;
-    margin-right: 7rem
-}
-
-.mission-container h3 {
-    font-size: 28px;
-    font-weight: 400;
-}
-
-.mission-container p {
-    margin-top: 2rem;
-    line-height: 1.25;
-    font-size: 20px;
-    font-weight: 400;
+.about:hover {
+    transform: scale(1.01) !important;
+    transition: ease-in-out 150ms;
 }
 
 .officer {

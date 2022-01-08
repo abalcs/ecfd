@@ -9,43 +9,40 @@ const About = () => {
 
   return (
     <>
-        <Container className='text-dark about'>
-            <h1 className='mt-4 text-center'>ABOUT US</h1>
 
-            <div className='flex-wrap'>
-                <div className='about-container'>
-                    <div className='history'>
-                        <div className='img1'>
-                            <img src={EC} alt='Erie County'></img>
-                        </div>
-                        <div className='history-container'>
-                            <h3>Our History</h3>
-                            {LoremIpsum(10)}
-                            </div>
-                        </div>
+        <h1 className='pt-4 text-center'>ABOUT US</h1>
 
-                <div className='mission'>
-                    <div className='img2'>
-                        <img src={NY} alt='State of NY'></img>
-                    </div>
-                    <div className='mission-container'>
-                        <h3>Our Mission</h3>
-                        {LoremIpsum()}
-                    </div>
-                </div>
-            </div>
-        </div>
+        <Container className='container text-dark d-flex flex-wrap justify-content-evenly mt-4 about' >
+            
+            <Card border='danger' style={{ width: '30rem' }} className='shadow p-3 mb-5 bg-body rounded about'>
+                <Card.Img className='p-3' variant="top" src={EC} />
+                <Card.Header>History</Card.Header>
+                <Card.Text className='p-3'>
+                    <LoremIpsum
+                    avgSentencesPerParagraph={4}
+                    />
+                </Card.Text>
+            </Card>
+
+            <Card border='danger' style={{ width: '30rem' }} className='shadow p-3 mb-5 bg-body rounded about'>
+                <Card.Img className='p-3' variant="top" src={NY} />
+                <Card.Header>Mission</Card.Header>
+                <Card.Text className='p-3'>
+                    <LoremIpsum
+                    avgSentencesPerParagraph={4}
+                    />
+                </Card.Text>
+            </Card>
+
         </Container>
-        
+    
+        <h2 className='text-center mt-4'>OUR OFFICERS</h2>
 
-
-                       
-
-        <Container className='d-flex flex-wrap justify-content-center volunteers'>
+        <Container className='d-flex flex-wrap justify-content-evenly volunteers'>
             <Card className='ms-5 mt-3 mb-5 officer' border="dark" style={{ width: '20rem' }}>
+                <Card.Header>President</Card.Header>  
                 <Card.Img src='https://cdn.stocksnap.io/img-thumbs/960w/person-portrait_NDKEEMX5WP.jpg' style={{ height: '15rem'}}></Card.Img>
-                <Card.Header>President</Card.Header>
-                <Card.Body className='bg-dark text-info'>
+                <Card.Body className='bg-dark text-light'>
                     <Card.Title>Name</Card.Title>
                         <Card.Text>
                             Subtitle
@@ -55,9 +52,9 @@ const About = () => {
             </Card>
             <br />
             <Card className='ms-5 mt-3 mb-5 officer' border="dark" style={{ width: '20rem' }}>
+                <Card.Header>Vice President</Card.Header>    
                 <Card.Img src='https://cdn.stocksnap.io/img-thumbs/960w/woman-natural_X9QBBG5DZF.jpg' style={{ height: '15rem'}}></Card.Img>
-                <Card.Header>Vice President</Card.Header>
-                <Card.Body className='bg-dark text-info'>
+                <Card.Body className='bg-dark text-light'>
                     <Card.Title>Name</Card.Title>
                         <Card.Text>
                             Subtitle
@@ -67,9 +64,9 @@ const About = () => {
             </Card>
             <br />
             <Card className='ms-5 mt-3 mb-5 officer' border="dark" style={{ width: '20rem' }}>
-                <Card.Img src='https://cdn.stocksnap.io/img-thumbs/960w/deer-nature_YVQMPLACTF.jpg' style={{ height: '15rem'}}></Card.Img>
                 <Card.Header>2nd Vice President</Card.Header>
-                <Card.Body className='bg-dark text-info'>
+                <Card.Img src='https://cdn.stocksnap.io/img-thumbs/960w/deer-nature_YVQMPLACTF.jpg' style={{ height: '15rem'}}></Card.Img>
+                <Card.Body className='bg-dark text-light'>
                     <Card.Title>Name</Card.Title>
                         <Card.Text>
                             Subtitle
@@ -79,9 +76,9 @@ const About = () => {
             </Card>
             <br />
             <Card className='ms-5 mt-3 mb-5 officer' border="dark" style={{ width: '20rem' }}>
-                <Card.Img src='https://cdn.stocksnap.io/img-thumbs/960w/boy-face_IBGY6G6AWT.jpg' style={{ height: '15rem'}}></Card.Img>
                 <Card.Header>Secretary</Card.Header>
-                <Card.Body className='bg-dark text-info'>
+                <Card.Img src='https://cdn.stocksnap.io/img-thumbs/960w/boy-face_IBGY6G6AWT.jpg' style={{ height: '15rem'}}></Card.Img>
+                <Card.Body className='bg-dark text-light'>
                     <Card.Title>Name</Card.Title>
                         <Card.Text>
                             Subtitle
@@ -91,9 +88,9 @@ const About = () => {
             </Card>
             <br />
             <Card className='ms-5 mt-3 mb-5 officer' border="dark" style={{ width: '20rem' }}>
-                <Card.Img src='https://cdn.stocksnap.io/img-thumbs/960w/business-man_7BQNRHB6EX.jpg' style={{ height: '15rem'}}></Card.Img>
                 <Card.Header>Treasurer</Card.Header>
-                <Card.Body className='bg-dark text-info'>
+                <Card.Img src='https://cdn.stocksnap.io/img-thumbs/960w/business-man_7BQNRHB6EX.jpg' style={{ height: '15rem'}}></Card.Img>
+                <Card.Body className='bg-dark text-light'>
                     <Card.Title>Name</Card.Title>
                         <Card.Text>
                             Subtitle
@@ -103,9 +100,9 @@ const About = () => {
             </Card>
             <br />
             <Card className='ms-5 mt-3 mb-5 officer' border="dark" style={{ width: '20rem' }}>
-                <Card.Img src='https://cdn.stocksnap.io/img-thumbs/960w/squirrel-nature_XT2APRFPRO.jpg' style={{ height: '15rem'}}></Card.Img>
                 <Card.Header>Sergeant-at-Arms</Card.Header>
-                <Card.Body className='bg-dark text-info'>
+                <Card.Img src='https://cdn.stocksnap.io/img-thumbs/960w/squirrel-nature_XT2APRFPRO.jpg' style={{ height: '15rem'}}></Card.Img>
+                <Card.Body className='bg-dark text-light'>
                     <Card.Title>Name</Card.Title>
                         <Card.Text>
                             Subtitle
