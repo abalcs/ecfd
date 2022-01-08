@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const cors = require('cors')
-// const routes = require('./routes/api_routes');
+const routes = require('./routes/api_routes');
 // const db = require('./config/connection');
 // require('dotenv').config();
 
@@ -12,22 +12,10 @@ const app = express(); // instance = Object
 app.use(cors());
 // Setup our server
 
-app.use(express.static(path.join(__dirname, 'client/build')));
+app.use('/', express.static(path.join(__dirname, 'client/build')));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
-app.get('/', (req, res) => {
-    res.send(`Hit homepage!`);
-})
-
-app.get('/about', (req, res) => {
-    res.send(`Hit about page!`)
-})
-
-app.get('/members', (req, res) => {
-    res.send(`Hit assoc. members page!`)
-})
 
 if (process.env.NODE_ENV === 'production') {
     // Exprees will serve up production assets
@@ -39,7 +27,7 @@ if (process.env.NODE_ENV === 'production') {
     });
   }
 
-// routes(app);
+routes(app);
 
 // Start the Server
 app.listen(PORT, () => {console.log(`Server running on port ${PORT}!`);});
