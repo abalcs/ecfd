@@ -11,7 +11,7 @@ const Main = () => {
       <div className='news bg-dark text-light'>
         <div className='w-70 p-5'>
           <h2>NEWS:</h2>
-          <p className='ms-5 me-5 fs-4 lh-lg p-5'>{LoremIpsum(10)}</p>
+          <p className='ms-5 me-5 fs-4 lh-lg p-1'>{LoremIpsum(10)}</p>
           <Button href='https://www.reuters.com' target='_blank' variant='success' size='lg' className='buttons'>FIND OUT MORE</Button>
         </div>
           
