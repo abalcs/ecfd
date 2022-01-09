@@ -6,16 +6,14 @@ import Fighters from '../img/firefighters.jpg'
 import Station from '../img/station.jpg'
 
 const breakPoints = [
-  { width: 1, itemsToShow: 1, itemsToScroll: 3 },
-  { width: 550, itemsToShow: 2, itemsToScroll: 3 },
-  { width: 800, itemsToShow: 2 },
-  { width: 1200, itemsToShow: 3 }
+  { width: 1, itemsToShow: 1 },
+  { width: 400, itemsToShow: 1 },
+  { width: 850, itemsToShow: 2 },
+  { width: 1500, itemsToShow: 3 }
 ];
 
 function Images() {
-
   return (
-
     <div className="App pt-4 bg-light">
       <div className="carousel-wrapper">
         <Carousel fade breakPoints={breakPoints}>

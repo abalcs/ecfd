@@ -8,7 +8,6 @@ const Members = () => {
         <p className='p-5 fs-1'>MEMBERS</p>
       </div>
     </div>
-   
   );
 }
 

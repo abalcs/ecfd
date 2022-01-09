@@ -9,12 +9,11 @@ const Main = () => {
     <main className='bg-light text-center'>
    
       <div className='news bg-dark text-light'>
-        <div className='w-70 p-5'>
+        <div className='w-70 pt-5 pb-5'>
           <h2>NEWS:</h2>
-          <p className='ms-5 me-5 fs-4 lh-lg p-1'>{LoremIpsum(10)}</p>
+          <p className='ms-5 me-5 fs-4 lh-lg p-1'>{LoremIpsum()}</p>
           <Button href='https://www.reuters.com' target='_blank' variant='success' size='lg' className='buttons'>FIND OUT MORE</Button>
-        </div>
-          
+        </div> 
       </div>
 
       <div className='events d-flex justify-content-center flex-column bg-light p-5'>
