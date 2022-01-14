@@ -1,5 +1,8 @@
 # Erie County Fire District Officers Association 
 
+Link to Deployed Site
+- https://www.ecfd.herokuapp.com
+
 # Table of Contents
 
 - [Description](#description)
@@ -8,7 +11,7 @@
 - [License](#license)
 
 ## Description:
-This webiste was built using React.js for the front-end, Node.js, and Express. 
+This webiste was built using React.js, CSS, and Bootstrap for the front-end, Node.js, and Express server was built for use in future site growth. 
 
 ## Usage:
 This site was built to inform the community about current and upcoming events and share information about associate members.
