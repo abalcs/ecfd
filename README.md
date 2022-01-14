@@ -1,7 +1,7 @@
 # Erie County Fire District Officers Association 
 
 Link to Deployed Site
-- https://www.ecfd.herokuapp.com
+- http://ecfd.herokuapp.com
 
 # Table of Contents
 
